@@ -23,7 +23,13 @@ h1 {
     font-size: 32px;
 }
 .latest {
-    background: #121218;
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f5f5f5 55%,
+        #e8e8e8 100%
+    );
+    color: #111;
 }
 
 .archive {
@@ -42,6 +48,10 @@ h1 {
 
 .mj {
     background: #c1121f;
+}
+    .latest h2 {
+    color: #111;
+    border-left: 4px solid #d4af37;
 }
 section {
     padding: 30px 20px;
@@ -69,6 +79,9 @@ iframe {
     margin-bottom: 50px;
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
+    .latest iframe {
+    border-radius: 8px;
+}
 </style>
 </head>
 
@@ -79,10 +92,10 @@ iframe {
 </header>
 
 <!-- ===================== -->
-<!-- Latest MIX -->
+<!-- Latest Mix -->
 <!-- ===================== -->
 <section class="latest">
-    <h2>Latest MIX</h2>
+    <h2>Latest Mix</h2>
 
     <div class="mix">
         <iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDJ_Agashi%2Fback-in-time-2%2F&hide_cover=1&mini=1&light=1"></iframe>
