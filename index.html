@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DJ Agashi 
-    Mix Archive</title>
+<title>DJ Agashi Mix Archive</title>
 
 <style>
 body {
@@ -14,17 +13,41 @@ body {
     color: #f5f5f5;
 }
 
-header {
-    padding: 35px 20px;
+/* =========================
+   HEADER（完成形ロゴ）
+========================= */
+.site-header {
+    padding: 50px 20px 35px;
     text-align: center;
+    position: relative;
 }
 
-h1 {
-    margin: 0;
-    font-size: 32px;
+.logo {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 1.1;
 }
 
-/* ===== 共通セクション ===== */
+.subtitle {
+    margin-top: 6px;
+    font-size: 12px;
+    letter-spacing: 6px;
+    color: rgba(255,255,255,0.55);
+}
+
+.site-header::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: rgba(255,255,255,0.15);
+    margin: 18px auto 0;
+}
+
+/* =========================
+   共通セクション
+========================= */
 section {
     max-width: 900px;
     margin: 0 auto 14px;
@@ -34,12 +57,14 @@ section {
 }
 
 h2 {
-    border-left: 4px solid #888;
-    padding-left: 10px;
     margin: 0 0 10px 0;
+    padding-left: 10px;
+    border-left: 4px solid #888;
 }
 
-/* ===== Latest（単発なので詰める）===== */
+/* =========================
+   Latest（軽くスポットライト）
+========================= */
 .latest {
     background: linear-gradient(
         180deg,
@@ -57,27 +82,32 @@ h2 {
     margin-bottom: 6px;
 }
 
-/* Latestの中身余白調整 */
 .latest .mix {
     margin-bottom: 0;
 }
 
-/* ===== Featured ===== */
+/* =========================
+   Featured
+========================= */
 .featured-title {
     max-width: 900px;
     margin: 16px auto 6px;
     padding: 0 20px;
+    font-size: 20px;
     font-weight: bold;
-    font-size: 22px;
     color: #ccc;
 }
 
-/* ===== MJ ===== */
+/* =========================
+   MJ（強い赤）
+========================= */
 .mj {
     background: #c1121f;
 }
 
-/* ===== YMO（単発に近いので詰める）===== */
+/* =========================
+   YMO（グラデーション）
+========================= */
 .ymo {
     background: linear-gradient(
         135deg,
@@ -93,17 +123,20 @@ h2 {
     margin-bottom: 6px;
 }
 
-/* YMOの中身余白調整 */
 .ymo .mix {
     margin-bottom: 0;
 }
 
-/* ===== Archive ===== */
+/* =========================
+   Archive
+========================= */
 .archive {
     background: #0b0b0f;
 }
 
-/* ===== Mix ===== */
+/* =========================
+   Mix iframe
+========================= */
 .mix {
     margin-bottom: 10px;
 }
@@ -119,11 +152,13 @@ h2 {
 
 <body>
 
-<header>
-    <h1>DJ Agashi / Mix Archive</h1>
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+    <div class="logo">DJ Agashi</div>
+    <div class="subtitle">MIX ARCHIVE</div>
 </header>
 
-<!-- ===== Latest ===== -->
+<!-- ================= Latest ================= -->
 <section class="latest">
     <h2>Latest Mix</h2>
     <div class="mix">
@@ -131,7 +166,7 @@ h2 {
     </div>
 </section>
 
-<!-- ===== Featured ===== -->
+<!-- ================= Featured ================= -->
 <div class="featured-title">Featured Mixes</div>
 
 <!-- MJ -->
@@ -168,7 +203,7 @@ h2 {
     </div>
 </section>
 
-<!-- ===== Archive ===== -->
+<!-- ================= Archive ================= -->
 <section class="archive">
     <h2>Mix Archive</h2>
 
