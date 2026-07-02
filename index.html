@@ -29,7 +29,6 @@ body {
     font-size: 36px;
     font-weight: 800;
     letter-spacing: 3px;
-    line-height: 1.1;
 }
 
 .subtitle {
@@ -40,7 +39,7 @@ body {
 }
 
 /* =========================
-   SECTION COMMON
+   SECTION
 ========================= */
 section {
     max-width: 900px;
@@ -51,42 +50,65 @@ section {
 }
 
 h2 {
-    margin: 0 0 10px;
+    margin: 0 0 12px;
     padding-left: 10px;
     border-left: 4px solid #888;
 }
 
 /* =========================
-   MIX BLOCK
+   MIX BLOCK（統一構造）
 ========================= */
-.mix {
-    margin-bottom: 10px;
+.mix-block {
+    margin-bottom: 22px;
 }
 
-/* IMPORTANT: iframe spacing reset */
-.mix iframe {
+/* タイトル */
+.mix-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* 説明 */
+.mix-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 6px;
+    color: rgba(255,255,255,0.88);
+}
+
+/* タグ */
+.mix-tags {
+    font-size: 11px;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.5px;
+}
+
+/* プレイヤー */
+.mix-block iframe {
     width: 100%;
     height: 120px;
     border: none;
     display: block;
-    margin: 0;
 }
 
-/* description (MAIN RULE: iframe直下に置く) */
-.mix-desc {
-    margin-top: 2px;
-    font-size: 13px;
-    line-height: 1.6;
-    color: rgba(255,255,255,0.88);
+/* =========================
+   LATEST（白スポット）
+========================= */
+.latest {
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f5f5f5 60%,
+        #e8e8e8 100%
+    );
+    color: #111;
 }
 
-/* tags */
-.mix-tags {
-    margin-top: 4px;
-    margin-bottom: 16px;
-    font-size: 11px;
-    color: rgba(255,255,255,0.55);
-    letter-spacing: 0.5px;
+.latest .mix-desc,
+.latest .mix-tags {
+    color: #333;
 }
 
 /* =========================
@@ -102,37 +124,14 @@ h2 {
 }
 
 /* =========================
-   LATEST MIX
-========================= */
-.latest {
-    background: linear-gradient(
-        180deg,
-        #ffffff 0%,
-        #f5f5f5 60%,
-        #e8e8e8 100%
-    );
-    color: #111;
-}
-
-.latest h2 {
-    color: #111;
-    border-left: 4px solid #d4af37;
-}
-
-.latest .mix-desc,
-.latest .mix-tags {
-    color: #333;
-}
-
-/* =========================
-   MJ MIX
+   MJ
 ========================= */
 .mj {
     background: #c1121f;
 }
 
 /* =========================
-   YMO MIX
+   YMO
 ========================= */
 .ymo {
     background: linear-gradient(
@@ -143,6 +142,7 @@ h2 {
         #2a2a2a
     );
 }
+
 </style>
 </head>
 
@@ -156,68 +156,68 @@ h2 {
 
 <!-- ================= LATEST ================= -->
 <section class="latest">
+
     <h2>Latest Mix</h2>
 
-    <div class="mix">
-        <iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDJ_Agashi%2Fback-in-time-2%2F&hide_cover=1&mini=1&light=1"></iframe>
+    <div class="mix-block">
+        <div class="mix-title">Back In Time 2</div>
 
         <div class="mix-desc">
             エレクトロ・ファンク、ブギー、そしてコズミックなグルーヴ。<br>
-            未来のような過去。過去のような未来。そんな80年代への音楽的時間旅行。
+            未来のような過去。過去のような未来。
         </div>
 
         <div class="mix-tags">
             #electro-disco #synth-funk #boogie #rnb #1980s
         </div>
+
+        <iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDJ_Agashi%2Fback-in-time-2%2F&hide_cover=1&mini=1&light=1"></iframe>
     </div>
+
 </section>
 
-<!-- ================= FEATURED TITLE ================= -->
+<!-- ================= FEATURED ================= -->
 <div class="featured-title">Featured Mixes</div>
 
 <!-- ================= MJ ================= -->
 <section class="mj">
+
     <h2>MJ Mix</h2>
 
-    <div class="mix-desc">
-        マイケル・ジャクソン、ジャクソン5、ジャクソンズの楽曲を、時代を越えてミックス。I ♥ MJ
-    </div>
+    <div class="mix-block">
+        <div class="mix-title">MuJic & Me 1 & 2</div>
 
-    <div class="mix">
+        <div class="mix-desc">
+            マイケル・ジャクソン、ジャクソン5、ジャクソンズの楽曲を、時代を越えてミックス。I ♥ MJ
+        </div>
+
         <iframe src="https://w.soundcloud.com/player/?url=https://soundcloud.com/akashisakurai/mjm1&color=%23ff0000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&visual=false"></iframe>
-    </div>
 
-    <div class="mix">
         <iframe src="https://w.soundcloud.com/player/?url=https://soundcloud.com/akashisakurai/mujic-me-pt2&color=%23ff0000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&visual=false"></iframe>
     </div>
+
 </section>
 
 <!-- ================= YMO ================= -->
 <section class="ymo">
+
     <h2>YMO Mix</h2>
 
-    <div class="mix-desc">
-        前期・中期・後期それぞれの特徴を踏まえながら、各時代から再生期までを縦断した30分ミニミックス×4。<br>
-        YMO is Out-Of-Place ARTistS.
-    </div>
+    <div class="mix-block">
+        <div class="mix-title">Y.M.Ooparts</div>
 
-    <div class="mix">
+        <div class="mix-desc">
+            前期・中期・後期それぞれの特徴を踏まえながら、各時代から再生期までを縦断した30分ミニミックス×4。<br>
+            YMO is Out-Of-Place ARTistS.
+        </div>
+
         <iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FSakurai_Akashi%2Fymooparts1%2F&hide_cover=1&mini=1&light=1"></iframe>
-    </div>
-
-    <div class="mix">
         <iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FSakurai_Akashi%2Fymooparts2%2F&hide_cover=1&mini=1&light=1"></iframe>
-    </div>
-
-    <div class="mix">
         <iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FSakurai_Akashi%2Fymooparts3%2F&hide_cover=1&mini=1&light=1"></iframe>
-    </div>
-
-    <div class="mix">
         <iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FSakurai_Akashi%2Fymooparts4%2F&hide_cover=1&mini=1&light=1"></iframe>
     </div>
-</section>
 
+</section>
 <!-- ================= Archive ================= -->
 <section class="archive">
     <h2>Mix Archive</h2>
