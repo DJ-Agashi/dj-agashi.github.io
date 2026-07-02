@@ -6,6 +6,10 @@
 <title>DJ Agashi Mix Archive</title>
 
 <style>
+
+/* =========================
+   BASE
+========================= */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -14,12 +18,11 @@ body {
 }
 
 /* =========================
-   HEADER（完成形ロゴ）
+   HEADER
 ========================= */
 .site-header {
     padding: 50px 20px 35px;
     text-align: center;
-    position: relative;
 }
 
 .logo {
@@ -36,62 +39,58 @@ body {
     color: rgba(255,255,255,0.55);
 }
 
-.site-header::after {
-    content: "";
-    display: block;
-    width: 120px;
-    height: 1px;
-    background: rgba(255,255,255,0.15);
-    margin: 18px auto 0;
-}
-
 /* =========================
-   共通セクション
+   SECTION COMMON
 ========================= */
 section {
     max-width: 900px;
-    margin: 0 auto 14px;
-    padding: 22px 20px;
+    margin: 0 auto;
+    padding: 18px 20px;
     border-bottom: 1px solid rgba(255,255,255,0.05);
     box-sizing: border-box;
 }
 
 h2 {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
     padding-left: 10px;
     border-left: 4px solid #888;
 }
 
 /* =========================
-   Latest（軽くスポットライト）
+   MIX BLOCK
 ========================= */
-.latest {
-    background: linear-gradient(
-        180deg,
-        #ffffff 0%,
-        #f5f5f5 60%,
-        #e8e8e8 100%
-    );
-    color: #111;
-    padding-bottom: 12px;
+.mix {
+    margin-bottom: 10px;
 }
 
-.latest h2 {
-    color: #111;
-    border-left: 4px solid #d4af37;
-    margin-bottom: 6px;
+/* IMPORTANT: iframe spacing reset */
+.mix iframe {
+    width: 100%;
+    height: 120px;
+    border: none;
+    display: block;
+    margin: 0;
 }
 
-.latest .mix {
-    margin-bottom: 0;
+/* description (MAIN RULE: iframe直下に置く) */
+.mix-desc {
+    margin-top: 2px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.88);
 }
-    .latest .mix-desc,
-.latest .mix-tags {
-    color: #333;
+
+/* tags */
+.mix-tags {
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-size: 11px;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.5px;
 }
 
 /* =========================
-   Featured
+   FEATURED TITLE
 ========================= */
 .featured-title {
     max-width: 900px;
@@ -103,14 +102,37 @@ h2 {
 }
 
 /* =========================
-   MJ（強い赤）
+   LATEST MIX
+========================= */
+.latest {
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f5f5f5 60%,
+        #e8e8e8 100%
+    );
+    color: #111;
+}
+
+.latest h2 {
+    color: #111;
+    border-left: 4px solid #d4af37;
+}
+
+.latest .mix-desc,
+.latest .mix-tags {
+    color: #333;
+}
+
+/* =========================
+   MJ MIX
 ========================= */
 .mj {
     background: #c1121f;
 }
 
 /* =========================
-   YMO（グラデーション）
+   YMO MIX
 ========================= */
 .ymo {
     background: linear-gradient(
@@ -120,54 +142,6 @@ h2 {
         #e6e6e6,
         #2a2a2a
     );
-    padding-bottom: 12px;
-}
-
-.ymo h2 {
-    margin-bottom: 6px;
-}
-
-.ymo .mix {
-    margin-bottom: 0;
-}
-
-/* =========================
-   Archive
-========================= */
-.archive {
-    background: #0b0b0f;
-}
-
-/* =========================
-   Mix iframe
-========================= */
-.mix {
-    margin-bottom: 10px;
-}
-
-.mix iframe {
-    width: 100%;
-    height: 120px;
-    border: none;
-    display: block;
-}
-
-.mix-desc {
-    margin-top: 8px;
-    font-size: 13px;
-    line-height: 1.6;
-    color: rgba(255,255,255,0.88);
-}
-
-.mix-tags {
-    margin-top: 4px;
-    margin-bottom: 18px;
-    font-size: 11px;
-    color: rgba(255,255,255,0.55);
-    letter-spacing: 0.5px;
-}
-    .mix-desc {
-    margin-top: 2px;
 }
 </style>
 </head>
@@ -180,37 +154,34 @@ h2 {
     <div class="subtitle">MIX ARCHIVE</div>
 </header>
 
-<!-- ================= Latest ================= -->
+<!-- ================= LATEST ================= -->
 <section class="latest">
     <h2>Latest Mix</h2>
-</div>
+
     <div class="mix">
         <iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDJ_Agashi%2Fback-in-time-2%2F&hide_cover=1&mini=1&light=1"></iframe>
-    <div class="mix-desc">
-        エレクトロ・ファンク、ブギー、そしてコズミックなグルーヴ。
-        未来のような過去。過去のような未来。そんな80年代への音楽的時間旅行。
-    </div>
 
-    <div class="mix-tags">
-        #electro-disco #synth-funk #boogie #rnb #1980s
-    </div>
-</div>
+        <div class="mix-desc">
+            エレクトロ・ファンク、ブギー、そしてコズミックなグルーヴ。<br>
+            未来のような過去。過去のような未来。そんな80年代への音楽的時間旅行。
+        </div>
+
+        <div class="mix-tags">
+            #electro-disco #synth-funk #boogie #rnb #1980s
+        </div>
     </div>
 </section>
 
-<!-- ================= Featured ================= -->
+<!-- ================= FEATURED TITLE ================= -->
 <div class="featured-title">Featured Mixes</div>
 
-<!-- MJ -->
+<!-- ================= MJ ================= -->
 <section class="mj">
     <h2>MJ Mix</h2>
-    <div class="mix-meta">
-    <div class="mix-title">MuJic & Me 1 & 2</div>
 
     <div class="mix-desc">
         マイケル・ジャクソン、ジャクソン5、ジャクソンズの楽曲を、時代を越えてミックス。I ♥ MJ
     </div>
-</div>
 
     <div class="mix">
         <iframe src="https://w.soundcloud.com/player/?url=https://soundcloud.com/akashisakurai/mjm1&color=%23ff0000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&visual=false"></iframe>
@@ -221,17 +192,14 @@ h2 {
     </div>
 </section>
 
-<!-- YMO -->
+<!-- ================= YMO ================= -->
 <section class="ymo">
     <h2>YMO Mix</h2>
-    <div class="mix-meta">
-    <div class="mix-title">Y.M.Ooparts</div>
 
     <div class="mix-desc">
-        前期・中期・後期それぞれの特徴を踏まえながら、各時代から再生期までを縦断した30分ミニミックス×4。4作目はカバー曲・提供曲を中心に構成。<br>
+        前期・中期・後期それぞれの特徴を踏まえながら、各時代から再生期までを縦断した30分ミニミックス×4。<br>
         YMO is Out-Of-Place ARTistS.
     </div>
-</div>
 
     <div class="mix">
         <iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FSakurai_Akashi%2Fymooparts1%2F&hide_cover=1&mini=1&light=1"></iframe>
