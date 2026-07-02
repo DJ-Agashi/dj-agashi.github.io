@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    padding: 40px 20px;
+    padding: 35px 20px;
     text-align: center;
 }
 
@@ -23,18 +23,18 @@ h1 {
     font-size: 32px;
 }
 
-/* ===== セクション共通 ===== */
+/* ===== 共通セクション ===== */
 section {
     max-width: 900px;
-    margin: 0 auto 18px;
-    padding: 20px 20px;
+    margin: 0 auto 14px;
+    padding: 22px 20px;
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 h2 {
     border-left: 4px solid #888;
     padding-left: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 /* ===== Latest ===== */
@@ -52,17 +52,19 @@ h2 {
     color: #111;
     border-left: 4px solid #d4af37;
 }
-    .latest {
-    margin-bottom: 10px;
+
+/* ===== Featured（重要：セクション化）===== */
+.featured {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* ===== Featured ===== */
-.featured-title {
-    max-width: 900px;
-    margin: 20px auto 10px;
-    padding: 0 20px;
-    font-weight: bold;
-    color: #ccc;
+.featured h2 {
+    margin: 10px 0 6px;
+    font-size: 26px;
+    color: #ddd;
+    border-left: 4px solid #c1121f;
 }
 
 /* ===== MJ ===== */
@@ -80,9 +82,6 @@ h2 {
         #2a2a2a
     );
 }
-    .ymo {
-    margin-bottom: 10px;
-}
 
 /* ===== Archive ===== */
 .archive {
@@ -91,7 +90,7 @@ h2 {
 
 /* ===== Mix ===== */
 .mix {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .mix iframe {
@@ -117,22 +116,10 @@ h2 {
     </div>
 </section>
 
-<!-- ===== Featured ===== -->
-.featured-title {
-    max-width: 900px;
-    margin: 18px auto 8px;
-    padding: 0 20px;
-
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 1px;
-
-    color: #e6e6e6;
-}
-    .featured-title {
-    border-left: 4px solid #c1121f;
-    padding-left: 12px;
-}
+<!-- ===== Featured（統一）===== -->
+<section class="featured">
+    <h2>Featured Mixes</h2>
+</section>
 
 <!-- MJ -->
 <section class="mj">
@@ -173,29 +160,17 @@ h2 {
     <h2>Mix Archive</h2>
 
     <div class="mix"><iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FDJ_Agashi%2Fback-in-time%2F&hide_cover=1&mini=1&light=1"></iframe></div>
-
     <div class="mix"><iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FSakurai_Akashi%2Fmidnight-merry-go-round%2F&hide_cover=1&mini=1&light=1"></iframe></div>
-
     <div class="mix"><iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FSakurai_Akashi%2Ffall-for-all%2F&hide_cover=1&mini=1&light=1"></iframe></div>
-
     <div class="mix"><iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FSakurai_Akashi%2Fbitter-sweet-summer-1%2F&hide_cover=1&mini=1&light=1"></iframe></div>
-
     <div class="mix"><iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FSakurai_Akashi%2Fbitter-sweet-summer-august-%2F&hide_cover=1&mini=1&light=1"></iframe></div>
-
     <div class="mix"><iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2FSakurai_Akashi%2Fbitter-sweet-summer-september-%2F&hide_cover=1&mini=1&light=1"></iframe></div>
-
     <div class="mix"><iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2Fakashi-sakurai%2Fgold-chains-remains%2F&hide_cover=1&mini=1&light=1"></iframe></div>
-
     <div class="mix"><iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2Fakashi-sakurai%2Fin-the-spirit-of-samba-a-sideways-journey-into-groove-and-joy%2F&hide_cover=1&mini=1&light=1"></iframe></div>
-
     <div class="mix"><iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2Fakashi-sakurai%2Fbossa-beats%2F&hide_cover=1&mini=1&light=1"></iframe></div>
-
     <div class="mix"><iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2Fakashi-sakurai%2F%E3%82%B6%E3%83%99%E3%82%B9%E3%83%88%E3%82%AA%E3%83%96%E3%83%9C%E3%82%B5%E3%83%8E%E3%83%90%2F&hide_cover=1&mini=1&light=1"></iframe></div>
-
     <div class="mix"><iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2Fakashi-sakurai%2Fgg-dedicate-to-mzk%2F&hide_cover=1&mini=1&light=1"></iframe></div>
-
     <div class="mix"><iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2Fakashi-sakurai%2Ffall-into-the-darkness-and-see-a-rainbow%2F&hide_cover=1&mini=1&light=1"></iframe></div>
-
     <div class="mix"><iframe src="https://www.mixcloud.com/widget/iframe/?feed=%2Fakashi-sakurai%2Fkanari-happy-birthday%2F&hide_cover=1&mini=1&light=1"></iframe></div>
 </section>
 
