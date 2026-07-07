@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Back In Time</title>
+
+<style>
+
+/* =========================
+   レコードUI
+========================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0e0e0e;
+    color: #f5f5f5;
+}
+
+/* レコード全体 */
+.record {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ジャケット */
+.cover img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* トラックリスト */
+.tracklist {
+    flex: 1;
+}
+
+.tracklist h1 {
+    font-size: 22px;
+    margin: 0 0 16px 0;
+}
+
+.tracklist ol {
+    padding-left: 18px;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+    .record {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .cover img {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- レコード本体 -->
+<div class="record">
+
+    <!-- ジャケット -->
+    <div class="cover">
+    <img src="images/MuJic & Me 2.png" alt="MuJic & Me 2 Jacket">
+</div>
+
+    <!-- トラックリスト -->
+    <div class="tracklist">
+
+        <h1>Back In Time</h1>
+
+        <ol>
+    <li>I Want You Back (Kei's Routine Jazz Party Mix) – The Jackson 5</li>
+    <li>The Love You Save – The Jackson 5</li>
+    <li>Blame It on the Boogie – The Jacksons</li>
+    <li>Shake Your Body (Down to the Ground) – The Jacksons</li>
+    <li>Love Never Felt So Good – Michael Jackson &amp; Justin Timberlake</li>
+    <li>Rock with You – Michael Jackson</li>
+    <li>Don't Stop 'Til You Get Enough – Michael Jackson</li>
+    <li>Wanna Be Startin' Somethin' – Michael Jackson</li>
+    <li>Thriller [The Reflex Halloween Disco Edit] – Michael Jackson</li>
+    <li>Billie Jean – Michael Jackson</li>
+    <li>Dangerous – Michael Jackson</li>
+    <li>Scream – Michael Jackson &amp; Janet Jackson</li>
+    <li>Remember the Time – Michael Jackson</li>
+    <li>Right Here (Human Nature Remix) – SWV</li>
+    <li>Human Nature – Michael Jackson</li>
+    <li>Man in the Mirror – Michael Jackson</li>
+    <li>I Want You Back (Z-Trip Remix) – The Jackson 5</li>
+    <li>I Want You Back – The Jackson 5</li>
+    <li>I'll Be There – The Jackson 5</li>
+    <li>I Never Dreamed You'd Leave In Summer – Stevie Wonder</li>
+    <li>Smile – Michael Jackson</li>
+</ol>
+
+    </div>
+
+</div>
+
+</body>
+</html>
