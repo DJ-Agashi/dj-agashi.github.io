@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bitter Sweet Summer - September -</title>
+
+<style>
+
+/* =========================
+   レコードUI
+========================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0e0e0e;
+    color: #f5f5f5;
+}
+
+/* レコード全体 */
+.record {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ジャケット */
+.cover img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* トラックリスト */
+.tracklist {
+    flex: 1;
+}
+
+.tracklist h1 {
+    font-size: 22px;
+    margin: 0 0 16px 0;
+}
+
+.tracklist ol {
+    padding-left: 18px;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+    .record {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .cover img {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- レコード本体 -->
+<div class="record">
+
+    <!-- ジャケット -->
+    <div class="cover">
+    <img src="images/BSS-September.png" alt="Bitter Sweet Summer - September - Jacket">
+</div>
+
+    <!-- トラックリスト -->
+    <div class="tracklist">
+
+        <h1>Bitter Sweet Summer - September -</h1>
+
+        <ol>
+  <li>Sgt. Pepper's Lonely Hearts Club Band – Easy Star All-Stars</li>
+  <li>With a Little Help from My Friends – Easy Star All-Stars</li>
+  <li>Your Love Is in My Veins – New Birth</li>
+  <li>On &amp; On – 韻シスト</li>
+  <li>Blue Moon Stone – The Checkers</li>
+  <li>君にBUMP – ケツメイシ</li>
+  <li>Oh, What a Night! – 久保田利伸</li>
+  <li>Montara – 西原健一郎</li>
+  <li>BEATS – bird</li>
+  <li>Volare – Gipsy Kings</li>
+  <li>Stay in the Shade – José González</li>
+  <li>渚 – Spitz</li>
+  <li>Watermelon – 高橋幸宏</li>
+  <li>君に胸キュン – 土岐麻子</li>
+  <li>Summer Situation – STUTS, SIK-KO, 鈴木真海子</li>
+  <li>I Can’t Forget About You – Ronn Matlock</li>
+  <li>September – Wayne Wonder</li>
+</ol>
+
+    </div>
+
+</div>
+
+</body>
+</html>
