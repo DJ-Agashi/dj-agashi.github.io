@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bitter Sweet Summer - August -</title>
+
+<style>
+
+/* =========================
+   レコードUI
+========================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0e0e0e;
+    color: #f5f5f5;
+}
+
+/* レコード全体 */
+.record {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ジャケット */
+.cover img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* トラックリスト */
+.tracklist {
+    flex: 1;
+}
+
+.tracklist h1 {
+    font-size: 22px;
+    margin: 0 0 16px 0;
+}
+
+.tracklist ol {
+    padding-left: 18px;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+    .record {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .cover img {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- レコード本体 -->
+<div class="record">
+
+    <!-- ジャケット -->
+    <div class="cover">
+    <img src="images/BSS-August.png" alt="Bitter Sweet Summer - August - Jacket">
+</div>
+
+    <!-- トラックリスト -->
+    <div class="tracklist">
+
+        <h1>Bitter Sweet Summer - August -</h1>
+
+        <ol>
+  <li>Beautiful Boy – John Lennon</li>
+  <li>Jamaica Song – Booker T</li>
+  <li>Ventura Highway – America</li>
+  <li>Someone to Call My Lover – Janet Jackson</li>
+  <li>LA PA PARADISE – BRADIO</li>
+  <li>林檎殺人事件 – 郷ひろみ &amp; 樹木希林</li>
+  <li>愛を描いて –LET'S KISS THE SUN– – 山下達郎</li>
+  <li>My Ever Changing Mood (piano) – The Style Council</li>
+  <li>Stand By Me – Ben E. King</li>
+  <li>Tape Change</li>
+  <li>みんなの夏 – FNCY</li>
+  <li>Feel It – Pushim</li>
+  <li>ENDLESS SUMMER NUDE – 真心ブラザーズ</li>
+  <li>真夏の夜の夢 – GLIM SPANKY cheers 松任谷由実</li>
+  <li>美しく燃える森 – 東京スカパラダイスオーケストラ</li>
+  <li>Sukiyaki – Jennifer Lara</li>
+  <li>After Hanabi (Listen To My Beats) – Nujabes</li>
+  <li>夏の終わりのハーモニー – bird</li>
+</ol>
+
+    </div>
+
+</div>
+
+</body>
+</html>
