@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Midnight Merry-Go-Round</title>
+<title>Midnight-Merry-Go-Round</title>
 
 <style>
 
@@ -74,7 +74,7 @@ body {
 
     <!-- ジャケット -->
     <div class="cover">
-    <img src="images/Merry-Go-Round.png" alt="Midnight Merry-Go-Round Jacket">
+    <img src="images/Merry-Go-Round.png" alt="Midnight-Merry-Go-Round Jacket">
 </div>
 
     <!-- トラックリスト -->
