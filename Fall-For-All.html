@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fall For All</title>
+
+<style>
+
+/* =========================
+   レコードUI
+========================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0e0e0e;
+    color: #f5f5f5;
+}
+
+/* レコード全体 */
+.record {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ジャケット */
+.cover img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* トラックリスト */
+.tracklist {
+    flex: 1;
+}
+
+.tracklist h1 {
+    font-size: 22px;
+    margin: 0 0 16px 0;
+}
+
+.tracklist ol {
+    padding-left: 18px;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+    .record {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .cover img {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- レコード本体 -->
+<div class="record">
+
+    <!-- ジャケット -->
+    <div class="cover">
+    <img src="images/FFA1.png" alt="Fall For All">
+</div>
+
+    <!-- トラックリスト -->
+    <div class="tracklist">
+
+        <h1>Fall For All</h1>
+
+        <ol>
+  <li>Intro</li>
+  <li>50 Ways To Leave Your Lover – Paul Simon</li>
+  <li>Walk On The Wild Side – Lou Reed</li>
+  <li>Two of Us – The Beatles</li>
+  <li>We Fell In Love In October (guitar ver.) – girl in red</li>
+  <li>In My Life – Roberta Flack</li>
+  <li>Baby, Love Is A Two-way Street – Addrisi Brothers</li>
+  <li>Tripping Out – Curtis Mayfield</li>
+  <li>Paper Doll – 山下達郎</li>
+  <li>接吻 (Kiss) – ORIGINAL LOVE</li>
+  <li>Ascension (Don't Ever Wonder) – Maxwell</li>
+  <li>What You Won’t Do for Love – Bobby Caldwell</li>
+  <li>Brown Sugar (Heartbreak Sound Rework) – D’Angelo</li>
+  <li>Hello It’s Me – Groove Theory</li>
+  <li>Beautiful Beauti – Brainstory</li>
+  <li>Now You’re Not Here – Swing Out Sister</li>
+  <li>Clair de Lune – Kamasi Washington</li>
+  <li>From the Bottom of My Heart – Stevie Wonder</li>
+</ol>
+
+    </div>
+
+</div>
+
+</body>
+</html>
