@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ザ・ベスト・オブ・ボサノバ</title>
+
+<style>
+
+/* =========================
+   レコードUI
+========================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0e0e0e;
+    color: #f5f5f5;
+}
+
+/* レコード全体 */
+.record {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ジャケット */
+.cover img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* トラックリスト */
+.tracklist {
+    flex: 1;
+}
+
+.tracklist h1 {
+    font-size: 22px;
+    margin: 0 0 16px 0;
+}
+
+.tracklist ol {
+    padding-left: 18px;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+    .record {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .cover img {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- レコード本体 -->
+<div class="record">
+
+    <!-- ジャケット -->
+    <div class="cover">
+    <img src="images/BestBossa.png" alt="ザ・ベスト・オブ・ボサノバ Jacket">
+</div>
+
+    <!-- トラックリスト -->
+    <div class="tracklist">
+
+        <h1>ザ・ベスト・オブ・ボサノバ</h1>
+
+        <ol>
+  <li>The Girl from Ipanema – Stan Getz, João Gilberto</li>
+  <li>Desafinado – Astrud Gilberto and George Michael</li>
+  <li>Meditation – Claudine Longet</li>
+  <li>So Nice (Summer Samba) – Bebel Gilberto</li>
+  <li>One Note Samba – The New Stan Getz Quartet Featuring Astrud Gilberto</li>
+  <li>Chega De Saudade – Lisa Ono</li>
+  <li>きっとまた – 山本リンダ</li>
+  <li>Bicho Do Mato – Walter Wanderley</li>
+  <li>Tristeza (Goodbye Sadness) – Sergio Mendes &amp; Brasil '66</li>
+  <li>Carolina, Carol Bela – Jorge Ben &amp; Toquinho</li>
+  <li>Mas Que Nada – Sergio Mendes &amp; Brasil '66</li>
+  <li>Bonfá Nova – Luiz Bonfá</li>
+  <li>Saudade Vem Correndo – Stan Getz &amp; Luiz Bonfá</li>
+  <li>O Amor Em Paz – Cannonball Adderley</li>
+  <li>Água De Beber – Astrud Gilberto</li>
+  <li>A Felicidade – Nara Leão</li>
+  <li>真夜中のボサ・ノバ – ヒデとロザンナ</li>
+  <li>どこかでだれかに – 木元泉, 大橋巨泉とザ・サラブレッズ</li>
+  <li>あの日に帰りたい – 荒井由実</li>
+  <li>ウェディング・ベル – シュガー</li>
+  <li>Comme d'habitude – Clémentine</li>
+  <li>Insensatez – Stan Getz &amp; Luiz Bonfá</li>
+  <li>No Meu Sotaque – Arto Lindsay</li>
+  <li>Águas De Março – Elis Regina &amp; Antonio Carlos Jobim</li>
+  <li>Brazil – Cornelius</li>
+  <li>Obrigado – TOWA TEI</li>
+  <li>Corcovado – Stan Getz, João Gilberto</li>
+</ol>
+
+    </div>
+
+</div>
+
+</body>
+</html>
