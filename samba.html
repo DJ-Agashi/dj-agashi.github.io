@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>In the Spirit of Samba</title>
+
+<style>
+
+/* =========================
+   レコードUI
+========================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0e0e0e;
+    color: #f5f5f5;
+}
+
+/* レコード全体 */
+.record {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ジャケット */
+.cover img {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* トラックリスト */
+.tracklist {
+    flex: 1;
+}
+
+.tracklist h1 {
+    font-size: 22px;
+    margin: 0 0 16px 0;
+}
+
+.tracklist ol {
+    padding-left: 18px;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+    .record {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .cover img {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- レコード本体 -->
+<div class="record">
+
+    <!-- ジャケット -->
+    <div class="cover">
+    <img src="images/In the Spirit of Samba.png" alt="In the Spirit of Samba Jacket">
+</div>
+
+    <!-- トラックリスト -->
+    <div class="tracklist">
+
+        <h1>In the Spirit of Samba</h1>
+
+       <ol>
+  <li>Let's Live Forever, Love – Roman Andren</li>
+  <li>Summer Sun – Koop</li>
+  <li>It's You – Joyce Cooling</li>
+  <li>Life – MONDO GROSSO</li>
+  <li>Batucada – Spiller</li>
+  <li>Dream Come True – The Brand New Heavies</li>
+  <li>Playback – Yukihiro Fukutomi</li>
+  <li>Summer Sun (Markus Enochson Remix) – Koop</li>
+  <li>Vai Minha Tristeza (Bob Sinclar Acoustic Remix) – Tom &amp; Joyce</li>
+  <li>Whistle Song – Fantastic Plastic Machine</li>
+  <li>Rock with You – TOKU</li>
+  <li>The Love You Save (Asakusa S.C.'01 Mix) – Jackson 5</li>
+  <li>Shining Star (DJ Jin Asakusa Samba Remix) – Earth, Wind &amp; Fire</li>
+  <li>北の国から – 中塚武</li>
+  <li>Queixume – Tom &amp; Joyce</li>
+  <li>Aldeia de Ogum – Joyce</li>
+  <li>風になりたい – THE BOOM</li>
+  <li>J'ai toujours aimé (Celebration Suite) – Liza Manili</li>
+  <li>Cannan – Studio Apartment</li>
+  <li>Hot Glamour (Bluey's Blue Bossa Remix) – 嶋野百恵</li>
+  <li>Billie Holiday (Latin Remix) [Instrumental] – Funky DL</li>
+  <li>Technova – TOWA TEI</li>
+  <li>Voo Sobre o Horizonte – Azymuth</li>
+</ol>
+
+    </div>
+
+</div>
+
+</body>
+</html>
